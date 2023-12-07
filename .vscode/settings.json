@@ -1,0 +1,10 @@
+{
+  "conventionalCommits.scopes": [
+    "prisma",
+    "header",
+    "panel",
+    "main-nav",
+    "cypress",
+    "project"
+  ]
+}
