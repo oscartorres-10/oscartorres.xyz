@@ -1,5 +1,8 @@
 ---
+const pageTitle = "About me"
 
+const titleColor = "lightpink"
+const h1Size = "4rem"
 ---
 
 <html lang="en">
@@ -8,9 +11,15 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>About</title>
+		<title>{pageTitle}</title>
+		<style define:vars={{titleColor, h1Size}}>
+      h1 {
+        color: var(--titleColor);
+        font-size: var(--h1Size);
+      }
+    </style>
 	</head>
 	<body>
-		<h1>About</h1>
+		<h1>{pageTitle}</h1>
 	</body>
 </html>
