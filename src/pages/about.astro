@@ -1,8 +1,8 @@
 ---
+import '../styles/global.css'
+
 const pageTitle = "About me"
 
-const titleColor = "lightpink"
-const h1Size = "4rem"
 ---
 
 <html lang="en">
@@ -12,12 +12,6 @@ const h1Size = "4rem"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-		<style define:vars={{titleColor, h1Size}}>
-      h1 {
-        color: var(--titleColor);
-        font-size: var(--h1Size);
-      }
-    </style>
 	</head>
 	<body>
 		<h1>{pageTitle}</h1>
