@@ -1,0 +1,26 @@
+---
+import Social from '../components/Social.astro'
+const url = 'oscartorres.io'
+const twitterUsername = '0scartorres10'
+// const linkedInUsername = 'oscartorres10'
+const gitHubUsername = 'oscartorres-10'
+---
+
+<footer>
+  <p>
+    Learn more about my projects on <a href=`${url}/projects`>Projects</a>
+  </p>
+
+  <Social platform='twitter' username={twitterUsername} />
+  <!-- it doesn't work because LinkedIn adds a "in" before the username -->
+  <!-- <Social platform='linkedin' username={linkedInUsername} /> -->
+  <Social platform='github' username={gitHubUsername} />
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
