@@ -1,6 +1,5 @@
 ---
 import Header from '../components/Header.astro'
-import Navigation from '../components/Navigation.astro'
 import '../styles/global.css'
 
 const pageTitle = "About me"
@@ -18,5 +17,8 @@ const pageTitle = "About me"
 	<body>
 		<Header />
 		<h1>{pageTitle}</h1>
+		<script>
+      import '../scripts/menu.js'
+    </script>
 	</body>
 </html>
