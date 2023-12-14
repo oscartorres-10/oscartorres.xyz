@@ -1,0 +1,10 @@
+---
+const { postUrl, postTitle, postPubDate } = Astro.props
+---
+
+<ul style='display: flex; list-style: none; gap: 10px; padding-left: 20px;'>
+  {postPubDate.slice(0, 10)}
+  <li>
+    <a href={postUrl}>{postTitle}</a>
+  </li>
+</ul>
