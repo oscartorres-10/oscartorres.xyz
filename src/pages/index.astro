@@ -1,8 +1,15 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Home Page";
+import BaseLayout from '../layouts/BaseLayout.astro'
+import '../styles/global.css'
+import { Content as HomePage } from '../content/homepage.md'
+
+const pageTitle = 'Oscar Torres'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <p>TODO: create my home page, come back soon!</p>
+  <HomePage />
+
+  <script>
+    import '../scripts/menu.js'
+  </script>
 </BaseLayout>
