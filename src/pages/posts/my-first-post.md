@@ -7,7 +7,7 @@ author: 'Oscar Torres'
 image:
   url: 'https://avatars.githubusercontent.com/u/38195378?v=4'
   alt: 'Oscars profile pic.'
-tags: ['astro', 'blogging', 'learning in public']
+tags: ['blogging', 'learning in public', 'astro']
 ---
 
 Welcome to my _new personal website_! This is my space in the web.
