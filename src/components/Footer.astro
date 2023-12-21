@@ -1,5 +1,6 @@
 ---
 import Social from '../components/Social.astro'
+import ThemeIcon from './ThemeIcon.astro'
 const url = 'oscartorres.io'
 const twitterUsername = '0scartorres10'
 // const linkedInUsername = 'oscartorres10'
@@ -7,6 +8,7 @@ const gitHubUsername = 'oscartorres-10'
 ---
 
 <footer>
+  <ThemeIcon />
   <Social platform='twitter' username={twitterUsername} />
   <!-- it doesn't work because LinkedIn adds a "in" before the username -->
   <!-- <Social platform='linkedin' username={linkedInUsername} /> -->
