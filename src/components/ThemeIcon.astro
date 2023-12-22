@@ -37,6 +37,16 @@
   }
 </style>
 
+<!-- fixes FOUC (Flash of Unstyled Content) on navigation between pages -->
+<script>
+  document.addEventListener('astro:after-swap', () => {
+    localStorage.theme === 'dark'
+    ? document.documentElement.classList.add("dark")
+    : document.documentElement.classList.add("light");
+  });
+</script>
+
+<!-- TODO fix FOUC (Flash of Unstyled Content) on first render -->
 <script>
   document.addEventListener('astro:page-load', () => {
     const theme = (() => {
