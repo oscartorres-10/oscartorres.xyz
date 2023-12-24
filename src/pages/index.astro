@@ -1,15 +1,78 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import '../styles/global.css'
-import { Content as HomePage } from '../content/homepage.md'
-
-const pageTitle = 'Oscar Torres'
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <HomePage />
+<BaseLayout>
+  <article class='info-card'>
+    <img
+      class='profile-pic'
+      src='https://avatars.githubusercontent.com/u/38195378?v=4'
+    />
+    <div>
+      <h1 style='font-size: 2rem;'>oscartorres</h1>
+      <p>Who am I? I'm everything and nothing at the same time.</p>
+    </div>
+  </article>
+
+  <article class='info-card'>
+    <div>
+      <h1 style='font-size: 1.5rem;'>doing</h1>
+      <p>
+        <ul>
+          <li>code: at TCS, this website you are reading and other projects</li>
+          <li>organize: at AV and Sintiencia</li>
+          <li>exercise: swimming and yoga</li>
+          <li>read: Atomic Habits, sive.rs and stephango.com</li>
+        </ul>
+      </p>
+    </div>
+  </article>
+
+  <article class='info-card'>
+    <div>
+      <h1 style='font-size: 1.5rem;'>interests</h1>
+      <p>
+        <ul>
+          <li>investment and personal finances</li>
+          <li>business and entrepreneurship</li>
+        </ul>
+      </p>
+    </div>
+  </article>
+
+  <article class='info-card'>
+    <div>
+      <h1 style='font-size: 1.5rem;'>past-present</h1>
+      <p>
+        Here are some things I have <i>been doing</i> for years:
+        <ul>
+          <li>animal rights activism</li>
+          <li>coding, started academically and then professionally</li>
+        </ul>
+      </p>
+    </div>
+  </article>
 
   <script>
     import '../scripts/menu.js'
   </script>
 </BaseLayout>
+
+<style>
+  .profile-pic {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .info-card {
+    display: flex;
+    gap: 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin: 20px 5px;
+    padding: 5px;
+  }
+</style>
