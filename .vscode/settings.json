@@ -7,6 +7,10 @@
     "tailwind",
     "base-layout",
     "homepage",
-    "global.css"
+    "global.css",
+    "vscode",
+    "markdown-post-layout",
+    "package-lock",
+    "readme"
   ]
 }
