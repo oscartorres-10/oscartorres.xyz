@@ -37,7 +37,6 @@ body {
   box-sizing: border-box;
 }
 
-
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
@@ -70,7 +69,7 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  }
+}
 
 .nav-links a:hover,
 .nav-links a:focus {
@@ -120,4 +119,11 @@ a {
 
 p {
   margin: 16px 0px;
+}
+
+@layer base {
+  :root {
+    /* --oscar-pink: hsl(327, 87%, 82%, 1) */
+    --oscar-pink: 327, 87.1%, 81.8%, 1;
+  }
 }
