@@ -119,3 +119,7 @@ footer {
 a {
   text-decoration: underline;
 }
+
+p {
+  margin: 16px 0px;
+}
