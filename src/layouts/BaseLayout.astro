@@ -16,7 +16,7 @@ const { pageTitle } = Astro.props
   </head>
   <body>
     <Header />
-    {pageTitle && <h1 class="m-4 text-5xl font-bold text-oscarPink">{pageTitle}</h1>}
+    {pageTitle && <h1 class="my-4 text-2xl md:text-4xl lg:text-5xl font-bold text-oscarPink" transition:animate="slide">{pageTitle}</h1>}
     <!-- injects the .astro components -->
     <slot />
     <script>
