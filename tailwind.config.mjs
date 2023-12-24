@@ -5,4 +5,9 @@ export default {
 		extend: {},
 	},
 	plugins: [],
+
+	// Normalization of browser styles. @see https://tailwindcss.com/docs/preflight#accessibility-considerations
+	// corePlugins: {
+	// 	preflight: false,
+	// }
 }
