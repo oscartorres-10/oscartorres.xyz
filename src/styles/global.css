@@ -33,12 +33,6 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
-  margin: 1rem 0;
-  font-size: 2.5rem;
-  color: pink;
-  font-weight: bold;
-}
 
 .hamburger {
   padding-right: 20px;
