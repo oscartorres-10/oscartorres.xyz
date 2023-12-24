@@ -4,22 +4,23 @@ import '../styles/global.css'
 ---
 
 <BaseLayout>
-  <article class='info-card'>
+  <article class='grid gap-1 text-sm md:text-lg my-5 mx-1 p-2'>
     <img
-      class='profile-pic'
+      class='rounded-full w-24 md:w-28 lg:w-32 h-24 md:h-28 lg:h-32'
       src='https://avatars.githubusercontent.com/u/38195378?v=4'
+      alt="oscartorres's avatar"
     />
     <div>
-      <h1 style='font-size: 2rem;'>oscartorres</h1>
+      <h1 style='font-size: 2rem;'>hey! I'm Oscar</h1>
       <p>Who am I? I'm everything and nothing at the same time.</p>
     </div>
   </article>
 
-  <article class='info-card'>
+  <article class='flex gap-4 border border-solid border-gray-300 rounded-xl text-sm md:text-lg my-5 mx-1 p-2'>
     <div>
       <h1 style='font-size: 1.5rem;'>doing</h1>
       <p>
-        <ul>
+        <ul class="list-disc list-inside ml-6">
           <li>code: at TCS, this website you are reading and other projects</li>
           <li>organize: at AV and Sintiencia</li>
           <li>exercise: swimming and yoga</li>
@@ -29,11 +30,11 @@ import '../styles/global.css'
     </div>
   </article>
 
-  <article class='info-card'>
+  <article class='flex gap-4 border border-solid border-gray-300 rounded-xl text-sm md:text-lg my-5 mx-1 p-2'>
     <div>
       <h1 style='font-size: 1.5rem;'>interests</h1>
       <p>
-        <ul>
+        <ul class="list-disc list-inside ml-6">
           <li>investment and personal finances</li>
           <li>business and entrepreneurship</li>
         </ul>
@@ -41,12 +42,12 @@ import '../styles/global.css'
     </div>
   </article>
 
-  <article class='info-card'>
+  <article class='flex gap-4 border border-solid border-gray-300 rounded-xl text-sm md:text-lg my-5 mx-1 p-2'>
     <div>
       <h1 style='font-size: 1.5rem;'>past-present</h1>
       <p>
         Here are some things I have <i>been doing</i> for years:
-        <ul>
+        <ul class="list-disc list-inside ml-6">
           <li>animal rights activism</li>
           <li>coding, started academically and then professionally</li>
         </ul>
@@ -58,21 +59,3 @@ import '../styles/global.css'
     import '../scripts/menu.js'
   </script>
 </BaseLayout>
-
-<style>
-  .profile-pic {
-    border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
-  }
-
-  .info-card {
-    display: flex;
-    gap: 15px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    font-size: 0.8rem;
-    margin: 20px 5px;
-    padding: 5px;
-  }
-</style>
