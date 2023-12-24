@@ -1,3 +1,12 @@
 {
-  "conventionalCommits.scopes": ["header", "main-nav", "project"]
+  "conventionalCommits.scopes": [
+    "header",
+    "main-nav",
+    "project",
+    "astro-config, base-layout",
+    "tailwind",
+    "base-layout",
+    "homepage",
+    "global.css"
+  ]
 }
