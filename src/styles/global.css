@@ -123,6 +123,7 @@ p {
 @layer base {
   :root {
     /* --oscar-pink: hsl(327, 87%, 82%, 1) */
+    /* --oscar-pink: #F9A8D5 */
     --oscar-pink: 327, 87.1%, 81.8%, 1;
   }
 }
