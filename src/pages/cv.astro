@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import '../styles/global.css'
+
+const pageTitle = 'CV'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <p>
+    I think that in the future I would like to have a fancy CV here, but in the
+    meantime you can check my current fancy one in Notion 😎
+  </p>
+  <li>
+    <a href='https://bit.ly/OscarTorresCV'>Oscar Torres CV</a>
+  </li>
+  <script>
+    import '../scripts/menu.js'
+  </script>
+</BaseLayout>
