@@ -10,7 +10,8 @@
     "global.css",
     "vscode",
     "markdown-post-layout",
-    "package-lock",
-    "readme"
+    "readme",
+    "package.json",
+    "package-lock.json"
   ]
 }
