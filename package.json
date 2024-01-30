@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "installAndDev": "npm install && npm run dev"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.1",
