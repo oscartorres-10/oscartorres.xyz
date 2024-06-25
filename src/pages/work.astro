@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import '../styles/global.css'
+
+const pageTitle = 'work'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <p>
+    this page is a <i>work</i> in progress, for now here is a simple list of my projects
+  </p>
+  <ul>
+    <li class='border p-3 grid grid-cols-4 gap-3'>
+      <p>2023</p>
+      <p class='col-span-3'>
+        <a class='block mb-4' href='https://avu.vercel.app/' target='_blank'
+          >avu-app</a
+        >
+        Next.js app for the Asociación Vegana del Uruguay, as part of
+        <a href='https://www.zotero.org/oscartorres10#M6RFU76V' target='_blank'>
+          my thesis
+        </a>
+      </p>
+    </li>
+  </ul>
+  <script>
+    import '../scripts/menu.js'
+  </script>
+</BaseLayout>
