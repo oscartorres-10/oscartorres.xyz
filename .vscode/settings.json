@@ -9,10 +9,14 @@
     "homepage",
     "global.css",
     "vscode",
-    "markdown-post-layout",
     "readme",
     "package.json",
     "package-lock.json",
-    "index"
+    "index",
+    "blog, BlogPostLink",
+    "[tag]",
+    "content/config",
+    "MarkdownPostLayout",
+    "tailwind, MarkdownPostLayout"
   ]
 }
