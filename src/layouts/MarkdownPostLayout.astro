@@ -1,6 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 const { frontmatter } = Astro.props
+const dateFormatOptions = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
@@ -25,7 +30,7 @@ const { frontmatter } = Astro.props
     )
   }
   <p style='font-size: 0.8rem'>
-    Published on {frontmatter.pubDate.toString().slice(0, 10)}
+    {frontmatter.pubDate.toLocaleDateString(undefined, dateFormatOptions)}
   </p>
 
   <div class='tags'>
