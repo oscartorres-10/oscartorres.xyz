@@ -9,15 +9,17 @@ const pageTitle = 'blog'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  {
-    allPosts.map((post) => (
-      <BlogPostLink
-        postUrl={`/posts/${post.slug}`}
-        postTitle={post.data.title}
-        postPubDate={post.data.pubDate.toString()}
-      />
-    ))
-  }
+  <ul class='grid gap-3'>
+    {
+      allPosts.map((post) => (
+        <BlogPostLink
+          postUrl={`/posts/${post.slug}`}
+          postTitle={post.data.title}
+          postPubDate={post.data.pubDate.toISOString()}
+        />
+      ))
+    }
+  </ul>
   <script>
     import '../scripts/menu.js'
   </script>
