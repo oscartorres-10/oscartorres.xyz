@@ -8,7 +8,9 @@ export default {
 			}
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
 
 	// Normalization of browser styles. @see https://tailwindcss.com/docs/preflight#accessibility-considerations
 	// corePlugins: {
