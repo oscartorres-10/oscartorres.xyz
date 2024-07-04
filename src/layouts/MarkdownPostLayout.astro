@@ -35,17 +35,15 @@ const dateFormatOptions = {
       {frontmatter.pubDate.toLocaleDateString(undefined, dateFormatOptions)}
     </p>
 
-    <div class='tags'>
-      {
-        frontmatter?.tags.map((tag) => (
-          <p class='tag'>
-            <a href={`/tags/${tag}`}>{tag}</a>
-          </p>
-        ))
-      }
-    </div>
-
     <slot />
+
+    {
+      frontmatter?.tags.map((tag) => (
+        <span class='tag'>
+          <a href={`/tags/${tag}`}>#{tag}</a>
+        </span>
+      ))
+    }
   </Prose>
 </BaseLayout>
 
@@ -54,17 +52,7 @@ const dateFormatOptions = {
     color: #00539f;
   }
 
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .tag {
-    margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: 0.5em;
-    padding: 0.5em 1em;
     font-size: 0.8em;
-    background-color: #f8fcfd;
   }
 </style>
