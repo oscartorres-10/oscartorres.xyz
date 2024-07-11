@@ -17,6 +17,10 @@
     "[tag]",
     "content/config",
     "MarkdownPostLayout",
-    "tailwind, MarkdownPostLayout"
+    "tailwind, MarkdownPostLayout",
+    "content",
+    "HumanMade",
+    "routes",
+    "astro-config"
   ]
 }
