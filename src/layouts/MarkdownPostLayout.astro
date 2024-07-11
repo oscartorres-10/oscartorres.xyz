@@ -1,6 +1,7 @@
 ---
 import Prose from '../components/Prose.astro'
 import BaseLayout from '../layouts/BaseLayout.astro'
+import HumanMade from '../components/HumanMade.astro'
 const { frontmatter } = Astro.props
 const dateFormatOptions = {
   year: 'numeric',
@@ -44,6 +45,8 @@ const dateFormatOptions = {
         </span>
       ))
     }
+
+    <HumanMade />
   </Prose>
 </BaseLayout>
 
