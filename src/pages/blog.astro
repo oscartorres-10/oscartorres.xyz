@@ -13,7 +13,7 @@ const pageTitle = 'blog'
     {
       allPosts.map((post) => (
         <BlogPostLink
-          postUrl={`/posts/${post.slug}`}
+          postUrl={`/blog/${post.slug}`}
           postTitle={post.data.title}
           postPubDate={post.data.pubDate.toISOString()}
         />

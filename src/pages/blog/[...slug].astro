@@ -2,6 +2,8 @@
 import { getCollection } from 'astro:content'
 import MarkdownPostLayout from '../../layouts/MarkdownPostLayout.astro'
 
+// TODO: check if you can get very short urls, without the /blog or /posts, directly just /finanzas. inspiration: https://sive.rs/su
+
 export async function getStaticPaths() {
   const blogEntries = await getCollection('posts')
   return blogEntries.map((entry) => ({
