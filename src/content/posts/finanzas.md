@@ -152,7 +152,7 @@ Literalmente perdí plata durante 9 meses y ni cuenta me di. Estaba pagando de m
 
 ## Inflé mis gastos durante 10 meses
 
-Ya describí cómo hacemos las finanzas en mi casa. Luego de ese proceso siempre me queda a mi transferir lo que debo del mes, y ese movimiento lo anoto en ZetaSoftware para reflejar que salió un monto, por lo general grande), de mi cuenta bancaria.
+Ya describí cómo hacemos las finanzas en mi casa. Luego de ese proceso siempre me queda a mi transferir lo que debo del mes, y ese movimiento lo anoto en ZetaSoftware para reflejar que salió un monto, por lo general grande, de mi cuenta bancaria.
 
 Resulta que durante 10 meses lo estaba anotando como un Gasto, en vez de una Transferencia.
 
