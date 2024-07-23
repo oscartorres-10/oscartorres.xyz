@@ -16,6 +16,7 @@ export async function GET(context) {
       description: post.data.description,
       link: `/blog/${post.slug}/`,
       // Note: this will not process components or JSX expressions in MDX files.
+      // TODO: fix allowedTags not working. img and br tags are not rendered properly in NetNewsWire RSS feed reader.
       content: sanitizeHtml(parser.render(post.body), {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img', 'br'])
       }),
