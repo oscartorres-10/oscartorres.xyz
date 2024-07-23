@@ -6,21 +6,38 @@ const pageTitle = 'work'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <p>
-    this page is a <i>work</i> in progress, for now here is a simple list of my projects
-  </p>
-  <ul>
-    <li class='border p-3 grid grid-cols-4 gap-3'>
-      <p>2023</p>
+  <ul class='grid gap-4'>
+    <li class='border rounded-xl p-3 grid grid-cols-4 gap-3'>
+      <p>2023–</p>
       <p class='col-span-3'>
         <a class='block mb-4' href='https://avu.vercel.app/' target='_blank'
           >avu-app</a
         >
         Next.js app for the Asociación Vegana del Uruguay, as part of
         <a href='https://www.zotero.org/oscartorres10#M6RFU76V' target='_blank'>
-          my thesis
-        </a>
+          my thesis</a
+        >.
       </p>
+    </li>
+
+    <li class='border rounded-xl p-3 grid grid-cols-4 gap-3'>
+      <p>2023–</p>
+      <p class='col-span-3'>
+        <span class='block mb-4'>oscartorres.io</span>
+        My personal website. Uses Astro as the framework, Tailwind for styling and
+        Markdown files for the blog posts.
+      </p>
+    </li>
+  </ul>
+
+  <h2 class='mt-20 mb-4 text-lg md:text-xl lg:text-2xl font-bold'>
+    other small projects
+  </h2>
+  <ul>
+    <li>
+      <a href='https://github.com/oscartorres-10/spacex' target"_blank"
+        >SpaceX Past Launches</a
+      >
     </li>
   </ul>
   <script>
