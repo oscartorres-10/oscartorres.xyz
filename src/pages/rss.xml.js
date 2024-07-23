@@ -17,7 +17,7 @@ export async function GET(context) {
       link: `/blog/${post.slug}/`,
       // Note: this will not process components or JSX expressions in MDX files.
       content: sanitizeHtml(parser.render(post.body), {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img', 'br'])
       }),
     })),
     customData: `<language>en-us</language>`,
