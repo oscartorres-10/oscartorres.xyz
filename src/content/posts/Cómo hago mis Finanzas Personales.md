@@ -6,6 +6,7 @@ tags:
   - desarrollo-personal
   - herramientas
 pubDate: 2024-07-04
+slug: finanzas
 ---
 
 ZetaSoftware. Actualmente utilizo el módulo de Finanzas Personales de la empresa uruguaya ZetaSoftware, y ha sido una de las mejores herramientas que he incorporado en mi vida.
