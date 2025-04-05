@@ -11,13 +11,18 @@ const pageTitle = 'blog'
 <BaseLayout pageTitle={pageTitle}>
   <ul class='grid gap-3'>
     {
-      allPosts.map((post) => (
-        <BlogPostLink
-          postUrl={`/blog/${post.slug}`}
-          postTitle={post.data.title}
-          postPubDate={post.data.pubDate.toISOString()}
-        />
-      ))
+      allPosts
+        // Sort posts in descending order. See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#syntax.
+        .sort((a, b) => {
+          return b.data.pubDate.getTime() - a.data.pubDate.getTime()
+        })
+        .map((post) => (
+          <BlogPostLink
+            postUrl={`/blog/${post.slug}`}
+            postTitle={post.data.title}
+            postPubDate={post.data.pubDate.toISOString()}
+          />
+        ))
     }
   </ul>
   <script>
