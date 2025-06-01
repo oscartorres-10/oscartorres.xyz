@@ -19,7 +19,6 @@
     "MarkdownPostLayout",
     "tailwind, MarkdownPostLayout",
     "content",
-    "HumanMade",
     "routes",
     "astro-config",
     "finanzas.md",
