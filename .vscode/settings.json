@@ -21,6 +21,13 @@
     "content",
     "HumanMade",
     "routes",
-    "astro-config"
+    "astro-config",
+    "finanzas.md",
+    "MarkdownPostLayout, index",
+    "work",
+    "rss",
+    "package",
+    "Cómo hago mis Finanzas Personales",
+    "blog"
   ]
 }
