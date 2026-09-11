@@ -11,14 +11,15 @@
     "installAndDev": "npm install && npm run dev"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.1",
+    "@astrojs/rss": "^4.0.19",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^4.0.3",
+    "astro": "^7.3.2",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.13.0",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.13"
+    "@tailwindcss/typography": "^0.5.13",
+    "vite": "^8.3.0"
   }
 }

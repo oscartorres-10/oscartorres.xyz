@@ -25,7 +25,7 @@ const { posts } = Astro.props
   {
     posts.map((post) => (
       <BlogPostLink
-        postUrl={`/blog/${post.slug}`}
+        postUrl={`/blog/${post.data.slug}`}
         postTitle={post.data.title}
         postPubDate={post.data.pubDate.toISOString()}
       />
