@@ -2,99 +2,46 @@
 @plugin "@tailwindcss/typography";
 @import "tailwindcss";
 
+/* Keep dark: utilities in sync with the manual theme toggle's .dark class. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 html {
-  background-color: #f1f5f9;
   font-family: 'Liberation Mono', monospace;
 }
 
+html.light {
+  background-color: white;
+  color: black;
+}
+
 html.dark {
-  background-color: #0d0950;
-  color: #fff;
+  background-color: #12161b;
+  color: white;
 }
 
-.dark .nav-links a {
-  color: #fff;
-}
-
-.dark .nav-links a:hover,
-.dark .nav-links a:focus {
-  background-color: lightpink;
-}
-
-.dark h1 {
-  color: lightpink;
+.dark {
+  --background: #12161B;
+  --foreground: #F2F3F0;
+  --muted: #1C222A;
+  --muted-foreground: #A7B0BA;
+  --faint-foreground: #7E8894;
 }
 
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
-  padding: 1rem;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  max-width: 80ch;
 }
 
 * {
   box-sizing: border-box;
-}
-
-.hamburger {
-  padding-right: 20px;
-  cursor: pointer;
-}
-
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-}
-
-/* nav styles */
-
-.nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: pink;
-  display: none;
-  margin: 0;
-}
-
-.nav-links a {
-  color: black;
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.nav-links a:hover,
-.nav-links a:focus {
-  background-color: pink;
-}
-
-.expanded {
-  display: unset;
-}
-
-@media screen and (min-width: 636px) {
-  .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-  }
-
-  .nav-links a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-
-  .hamburger {
-    display: none;
-  }
 }
 
 footer {
@@ -111,18 +58,12 @@ footer {
   margin: 5px;
 }
 
-a {
-  text-decoration: underline;
-}
-
 p {
   margin: 16px 0px;
 }
 
 @layer base {
   :root {
-    /* --oscar-pink: hsl(327, 87%, 82%, 1) */
-    /* --oscar-pink: #F9A8D5 */
     --oscar-pink: 327, 87.1%, 81.8%, 1;
   }
 }

@@ -1,8 +1,8 @@
 ---
-import '../styles/global.css'
-import Header from '../components/Header.astro'
-import { ClientRouter } from 'astro:transitions'
-const { pageTitle } = Astro.props
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import { ClientRouter } from "astro:transitions";
+const { pageTitle } = Astro.props;
 ---
 
 <html lang='en'>
@@ -47,27 +47,29 @@ const { pageTitle } = Astro.props
     <link rel='icon' type='image/png' sizes='96x96' href='/favicon-96x96.png' />
     <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
     <link rel='manifest' href='/manifest.json' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='msapplication-TileColor' content='#ffffff' />
     <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
     <meta name='theme-color' content='#ffffff' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <meta property='og:title' content='Oscar Torres' />
+    <meta property='og:locale' content='en_US' />
+    <meta property='og:type' content='website' />
+    <meta name='twitter:card' content='summary' />
+    <meta property='twitter:title' content='Oscar Torres' />
+    <title>Oscar Torres | {pageTitle}</title>
+    <slot name='head' />
     <ClientRouter />
   </head>
-  <body>
+  <body class='pb-24'>
     <Header />
-    {
-      pageTitle && (
-        <h1 class='my-4 text-2xl md:text-4xl lg:text-5xl font-bold text-oscarPink'>
-          {pageTitle}
-        </h1>
-      )
-    }
     <!-- injects the .astro components -->
-    <slot />
+    <main class='p-4'>
+      <slot />
+    </main>
     <script>
-      import '../scripts/menu.js'
+      import "../scripts/menu.js";
     </script>
   </body>
 </html>

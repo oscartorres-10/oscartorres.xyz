@@ -1,16 +1,23 @@
 ---
-import Prose from '../components/Prose.astro'
-import BaseLayout from '../layouts/BaseLayout.astro'
-import BrainMade from '../components/BrainMade.astro'
-const { frontmatter } = Astro.props
+import Prose from "../components/Prose.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BrainMade from "../components/BrainMade.astro";
+const { frontmatter } = Astro.props;
 const dateFormatOptions = {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-}
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
+  {
+    frontmatter.title && (
+      <h1 class='my-4 text-2xl md:text-4xl lg:text-5xl font-bold text-oscarPink'>
+        {frontmatter.title}
+      </h1>
+    )
+  }
   <Prose>
     {
       frontmatter.image ? (
@@ -20,7 +27,7 @@ const dateFormatOptions = {
           width='300'
         />
       ) : (
-        ''
+        ""
       )
     }
     {
@@ -29,14 +36,14 @@ const dateFormatOptions = {
           <em>{frontmatter?.description}</em>
         </p>
       ) : (
-        ''
+        ""
       )
     }
     <p style='font-size: 0.8rem'>
       {
         frontmatter.pubDate.toLocaleDateString(undefined, {
           ...dateFormatOptions,
-          timeZone: 'UTC',
+          timeZone: "UTC",
         })
       }
     </p>
@@ -62,5 +69,9 @@ const dateFormatOptions = {
 
   .tag {
     font-size: 0.8em;
+  }
+
+  .tag:not(:last-of-type) {
+    margin-right: 0.5rem;
   }
 </style>

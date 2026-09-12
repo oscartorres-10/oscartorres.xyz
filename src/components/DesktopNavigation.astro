@@ -1,0 +1,22 @@
+---
+import { isCurrentPath, navigationItems } from "../utils/navigation";
+
+const currentPath = Astro.url.pathname;
+---
+
+<div id='desktop-navigation' class='flex items-center justify-end'>
+  {
+    navigationItems.map(({ href, label }) => (
+      <a
+        href={href}
+        class='text-sm relative cursor-pointer px-5 py-3.75 no-underline hover:text-oscarPink focus:text-oscarPink'
+        aria-current={isCurrentPath(currentPath, href) ? "page" : undefined}
+      >
+        {label}
+        {isCurrentPath(currentPath, href) && (
+          <span class='absolute bottom-1 left-1/2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-oscarPink' />
+        )}
+      </a>
+    ))
+  }
+</div>

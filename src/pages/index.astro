@@ -1,72 +1,45 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-import '../styles/global.css'
-const pageTitle = `hey! I'm Oscar`
+import { Image } from "astro:assets";
+import Artifacts from "../components/Artifacts.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Skills from "../components/Skills.astro";
+import "../styles/global.css";
+const pageTitle = `Hey! I'm Oscar`;
+import profile from "../assets/profile.jpg";
 ---
 
-<!-- TODO: add preview for posts link --><!-- this todo is here but i don't have any idea how to do this yet, maybe metadata, og:... something like that -->
-<BaseLayout pageTitle={pageTitle}>
-  <article class='grid gap-1 text-sm md:text-lg mx-1 mt-6'>
-    <img
-      class='rounded-full w-24 md:w-28 lg:w-32 h-24 md:h-28 lg:h-32'
-      src='https://avatars.githubusercontent.com/u/38195378?v=4'
-      alt="oscartorres's avatar"
+<BaseLayout pageTitle={pageTitle} lang='en-US'>
+  <section
+    class='mx-auto flex max-w-230 flex-col items-center text-center'
+  >
+    <Image
+      src={profile}
+      class='my-4 w-64 rounded-full border-2 border-gray-200'
+      alt='Oscar Torres'
     />
-    <div>
-      <p>Who am I? I'm everything and nothing at the same time.</p>
-    </div>
-  </article>
+    <Artifacts />
+    <article>
+      <h1 id='title' class='my-4 text-2xl'>Hey! I’m Oscar.</h1>
+      <p class='mb-4 text-[0.8em]'>
+        I am a Senior Frontend Engineer with 5+ years of experience specialized
+        in building UIs with TypeScript and React. At dLocal, a fintech platform
+        processing $41B for the world biggest brands, I led the launch of a new
+        Home page to track key payment metrics for 760+ B2B customers.
+      </p>
+      <p class='mb-4 text-[0.8em]'>
+        <strong>🚀 My personal motto: </strong><i
+          >"No person is more important than The Team"</i
+        >
+      </p>
 
-  <article
-    class='flex gap-4 border border-solid border-gray-300 rounded-xl text-sm md:text-lg my-5 mx-1 p-4'>
-    <div>
-      <h1 class='text-lg md:text-xl lg:text-3xl font-bold text-oscarPink'>
-        doing
-      </h1>
-      <div>
-        <ul class='list-disc list-inside ml-6 space-y-2'>
-          <li>code: at dLocal, this website you are reading and other projects</li>
-          <li>exercise: focus on calisthenics, sometimes swimming and yoga</li>
-          <li>read: sive.rs and stephango.com</li>
-        </ul>
-      </div>
-    </div>
-  </article>
+      <hr class='border-gray-200 dark:border-gray-700' />
 
-  <article
-    class='flex gap-4 border border-solid border-gray-300 rounded-xl text-sm md:text-lg my-5 mx-1 p-4'>
-    <div>
-      <h1 class='text-lg md:text-xl lg:text-3xl font-bold text-oscarPink'>
-        interests
-      </h1>
-      <div>
-        <ul class='list-disc list-inside ml-6 space-y-2'>
-          <li>investment and personal finances</li>
-          <li>business and entrepreneurship</li>
-        </ul>
-      </div>
-    </div>
-  </article>
-
-  <article
-    class='flex gap-4 border border-solid border-gray-300 rounded-xl text-sm md:text-lg my-5 mx-1 p-4'>
-    <div>
-      <h1 class='text-lg md:text-xl lg:text-3xl font-bold text-oscarPink'>
-        past-present
-      </h1>
-      <div>
-        Here are some things I have <i>been doing</i> for years:
-        <ul class='list-disc list-inside ml-6 space-y-2'>
-          <li>animal rights activism</li>
-          <li>coding, started academically and then professionally</li>
-        </ul>
-      </div>
-    </div>
-  </article>
-
-  <!-- TODO: check how to add some white space at the bottom of the whole site, so you can scroll a bit more and it's easier to click anything down there -->
-
-  <script>
-    import '../scripts/menu.js'
-  </script>
+      <Skills />
+      <a
+        href='https://www.linkedin.com/in/oscartorres10/'
+        class='text-[1em] font-normal text-[#3498db] hover:text-oscarPink underline'
+        target='_blank'>Let’s connect!</a
+      >
+    </article>
+  </section>
 </BaseLayout>

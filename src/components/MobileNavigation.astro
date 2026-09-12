@@ -1,0 +1,22 @@
+---
+import { isCurrentPath, navigationItems } from '../utils/navigation'
+
+const currentPath = Astro.url.pathname
+---
+
+<div
+  id='mobile-navigation'
+  class='absolute left-0 right-0 top-full z-20 max-h-0 w-full overflow-hidden border-b border-gray-200 opacity-0 transition-[max-height,opacity] duration-300 ease-out dark:border-gray-700 sm:hidden bg-white dark:bg-black'
+>
+  {
+    navigationItems.map(({ href, label }) => (
+      <a
+        href={href}
+        class='relative block cursor-pointer border-b border-gray-200 p-2.5 text-start no-underline last:border-b-0 focus:text-oscarPink dark:border-gray-700'
+        aria-current={isCurrentPath(currentPath, href) ? 'page' : undefined}
+      >
+        {label}
+      </a>
+    ))
+  }
+</div>
