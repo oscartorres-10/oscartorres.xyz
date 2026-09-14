@@ -15,6 +15,7 @@ export default defineConfig({
     "/resume": "/Oscar_Torres_Frontend_Engineer.pdf",
     "/CV": "/Oscar_Torres_Frontend_Engineer.pdf",
     "/Resume": "/Oscar_Torres_Frontend_Engineer.pdf",
-    "/RESUME": "/Oscar_Torres_Frontend_Engineer.pdf"
+    "/RESUME": "/Oscar_Torres_Frontend_Engineer.pdf",
+    "/book": "https://cal.com/oscartorres",
   }
 });
