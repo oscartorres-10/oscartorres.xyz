@@ -1,6 +1,6 @@
 # CV
 
-Place the current CV at `public/Oscar_Torres_Frontend_Engineer.pdf`.
+Place the current CV at `public/Oscar_Torres_Software_Engineer.pdf`.
 
 The stable URLs `https://oscartorres.xyz/cv` and
 `https://oscartorres.xyz/resume` redirect to that PDF. The case variants
